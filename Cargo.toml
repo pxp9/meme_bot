@@ -1,0 +1,16 @@
+[package]
+name = "meme_bot"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "import"
+path = "src/import/main.rs"
+
+[[bin]]
+name = "meme_bot"
+path = "src/meme_bot/main.rs"
+
+[dependencies]
+fang = { path="../fang/fang", version = "0.11.0-rc1" , features = ["asynk-postgres"], default-features = false }
+frankenstein = "0.34"
